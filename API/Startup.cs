@@ -34,6 +34,10 @@ namespace API
             services.AddDbContext<AlphaStellarApiDbContext>(ServiceLifetime.Transient);
             services.AddScoped<ICarService, CarService>();
             services.AddScoped<ICarRepository, CarRepository>();
+            services.AddScoped<IBusRepository, BusRepository>();
+            services.AddScoped<IBusService, BusService>();
+            services.AddScoped<IBoatRepository, BoatRepository>();
+            services.AddScoped<IBoatService, BoatService>();
 
             services.AddControllers();
             services.AddAutoMapper(config =>

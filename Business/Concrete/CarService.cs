@@ -24,9 +24,10 @@ namespace Business.Concrete
             _mapper = mapper;
         }
 
-        public CommandResponse Delete(Car car)
+        public CommandResponse Delete(CarDeleteDTO car)
         {
-           _repository.Delete(car);
+            var entity = _mapper.Map<Car>(car);
+           _repository.Delete(entity);
             return new CommandResponse
             {
                 Status = true,

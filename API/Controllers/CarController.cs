@@ -28,7 +28,7 @@ namespace API.Controllers
             return Ok(response);
         }
         [HttpDelete]
-        public IActionResult DeleteCar (Car car)
+        public IActionResult DeleteCar (CarDeleteDTO car)
         {
             var response = _carService.Delete(car);
             return Ok(response);

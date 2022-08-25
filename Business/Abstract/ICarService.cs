@@ -13,6 +13,6 @@ namespace Business.Abstract
     {
         public IEnumerable<Car> GetByColor(CarColorDto color);
         public CommandResponse LightsOnOff(CarLightsDTO light);
-        public CommandResponse Delete(Car car);
+        public CommandResponse Delete(CarDeleteDTO car);
     }
 }

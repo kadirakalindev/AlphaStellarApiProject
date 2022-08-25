@@ -15,6 +15,10 @@ namespace Business.Configs.Mapper
         {
             CreateMap<CarColorDto, Car>();
             CreateMap<CarLightsDTO, Car>();
+            CreateMap<CarDeleteDTO, Car>();
+            CreateMap<BoatColorDTO, Boat>();
+            CreateMap<BusColorDto, Bus>();
+            
         }
     }
 }
